@@ -94,6 +94,8 @@
           width: 60%;
           margin-left: 5%;
           margin-right: 5%;
+          border: 20px solid #C2D076;
+          /* border-image: url('leopard.png') 30 round; */
         }
 
 
@@ -147,7 +149,7 @@
           margin-left: auto;
           margin-right: auto;
           text-align: center;
-          margin-bottom: 2.5%;
+          margin-bottom: 5%;
           margin-top: 2.5%;
           border: 30px solid;
           border-image: url('lace.jpg') 40 round;
@@ -422,18 +424,78 @@
 
      <div style="clear: both;"></div>
 
+  <div style = "background-color: pink; padding-top: 2.5%; padding-bottom: 2.5%;">
       <h1 id = "project_section" class="h1">Projects</h1>
 
      <!-- PROJECTS START-->
-  <div class = "project-container justify-content-center">
+    <div class = "project-container justify-content-center" style = "background-image: url('leopard.png'); padding-top: 5%; padding-bottom: 5%;">
+
+      <div class = "row-container" style = "display: flex; justify-content: center; justify-items: center;">
+      <div class="row" style = "display: flex; justify-items: evenly; width: 75%; display: flex;">
+      <!-- style = "background-color: blue; width: 75%;"> -->
+
+            <div class="col-lg-6 d-flex justify-content-end">
+
+              <div class="card" style = "margin-top: 5%; width: 100%;">
+                  <img src="roomie_project.png" class="img-fluid rounded-start" alt="...">
+
+                  <div class="card-body">
+
+                    <h5 class="card-title">Roomie Radar</h5>
+                    <p class="card-text">...</p>
+                    <span class="badge badge-pill badge-custom-size" style="background-color: pink;">React.js</span>
+                    <span class="badge badge-pill" style="background-color: pink;">Cloud Firestore</span>
+                    <span class="badge badge-pill" style="background-color: pink;">Node.js</span>
+                    <span class="badge badge-pill" style="background-color: pink;">Figma</span>
+                    <span class="badge badge-pill" style="background-color: pink;">Firebase Storage</span>
+                    <span class="badge badge-pill" style="background-color: pink;">Bootstrap</span>
+                    <span class="badge badge-pill" style="background-color: pink;">CSS</span>
+                  </div>
+
+                  <div class = "card-footer" style = "text-align: center;" onclick="handleClick()">
+                  Learn More
+                  </div>
+
+              </div> <!-- Card -->
+
+            </div> <!--Col-->
+
+            <div class="col-lg-6 d-flex justify-content-start">
+
+              <div class="card" style = "margin-top: 5%; width: 100%;">
+                      <img src="roomie_project.png" class="img-fluid rounded-start" alt="...">
+
+                      <div class="card-body">
+                          <h5 class="card-title">Online Shopping Database</h5>
+                          <p class="card-text">...</p>
+                          <span class="badge badge-pill" style="background-color: pink;">SQL</span>
+                          <span class="badge badge-pill" style="background-color: pink;">Oracle SQL Developer</span>
+                          <span class="badge badge-pill" style="background-color: pink;">Github</span>
+                      </div>
+
+                      <div class = "card-footer" style = "text-align: center;" onclick="handleClick()">
+                        Learn More
+                      </div>
+              </div>
+
+            </div>
+
+      </div> <!--Row-->
+    </div>
+
+      <script>
+        function handleClick() {
+          window.location.href = 'project_4.html';
+        }
+      </script>
 
     <div class = "row-container" style = "display: flex; justify-content: center; justify-items: center;">
-     <div class="row" style = "display: flex; justify-items: evenly; width: 75%; display: flex;">
-     <!-- style = "background-color: blue; width: 75%;"> -->
+      <div class="row" style = "display: flex; justify-items: evenly; width: 75%; display: flex;">
+      <!-- style = "background-color: blue; width: 75%;"> -->
 
-          <div class="col-lg-6 d-flex justify-content-end">
+          <div class="col-lg-6 d-flex justify-content-center">
 
-            <div class="card" style = "margin-top: 5%; width: 100%;">
+            <div class="card" style = "margin-top: 5%; margin-bottom: 5%; width: 100%;">
                 <img src="roomie_project.png" class="img-fluid rounded-start" alt="...">
 
                 <div class="card-body">
@@ -457,9 +519,9 @@
 
           </div> <!--Col-->
 
-          <div class="col-lg-6 d-flex justify-content-start">
+          <div class="col-lg-6 d-flex justify-content-center">
 
-            <div class="card" style = "margin-top: 5%; width: 100%;">
+            <div class="card" style = "margin-top: 5%; margin-bottom: 5%; width: 100%;">
                     <img src="roomie_project.png" class="img-fluid rounded-start" alt="...">
 
                     <div class="card-body">
@@ -477,71 +539,13 @@
 
           </div>
 
-    </div> <!--Row-->
-  </div>
+      </div> <!--Row-->
+      </div>
 
-    <script>
-      function handleClick() {
-        window.location.href = 'project_4.html';
-      }
-    </script>
-
-  <div class = "row-container" style = "display: flex; justify-content: center; justify-items: center;">
-    <div class="row" style = "display: flex; justify-items: evenly; width: 75%; display: flex;">
-    <!-- style = "background-color: blue; width: 75%;"> -->
-
-        <div class="col-lg-6 d-flex justify-content-center">
-
-          <div class="card" style = "margin-top: 5%; margin-bottom: 5%; width: 100%;">
-              <img src="roomie_project.png" class="img-fluid rounded-start" alt="...">
-
-              <div class="card-body">
-
-                <h5 class="card-title">Roomie Radar</h5>
-                <p class="card-text">...</p>
-                <span class="badge badge-pill badge-custom-size" style="background-color: pink;">React.js</span>
-                <span class="badge badge-pill" style="background-color: pink;">Cloud Firestore</span>
-                <span class="badge badge-pill" style="background-color: pink;">Node.js</span>
-                <span class="badge badge-pill" style="background-color: pink;">Figma</span>
-                <span class="badge badge-pill" style="background-color: pink;">Firebase Storage</span>
-                <span class="badge badge-pill" style="background-color: pink;">Bootstrap</span>
-                <span class="badge badge-pill" style="background-color: pink;">CSS</span>
-              </div>
-
-              <div class = "card-footer" style = "text-align: center;" onclick="handleClick()">
-              Learn More
-              </div>
-
-          </div> <!-- Card -->
-
-        </div> <!--Col-->
-
-        <div class="col-lg-6 d-flex justify-content-center">
-
-          <div class="card" style = "margin-top: 5%; margin-bottom: 5%; width: 100%;">
-                  <img src="roomie_project.png" class="img-fluid rounded-start" alt="...">
-
-                  <div class="card-body">
-                      <h5 class="card-title">Online Shopping Database</h5>
-                      <p class="card-text">...</p>
-                      <span class="badge badge-pill" style="background-color: pink;">SQL</span>
-                      <span class="badge badge-pill" style="background-color: pink;">Oracle SQL Developer</span>
-                      <span class="badge badge-pill" style="background-color: pink;">Github</span>
-                  </div>
-
-                  <div class = "card-footer" style = "text-align: center;" onclick="handleClick()">
-                    Learn More
-                  </div>
-          </div>
-
-        </div>
-
-  </div> <!--Row-->
-  </div>
-
-</div> <!-- Project container-->
+    </div> <!-- Project container-->
 
      <!-- PROJECTS END -->
+  </div>
 
 
 
@@ -549,8 +553,8 @@
 
 
 
-    <div id = "container">
-      <h1 id = "experience_section" class="h1">Work Experience</h1>
+    <div id = "container" style = "background-color: pink;" style = "padding-bottom: 5%;">
+      <h1 id = "experience_section" class="h1" style = "background-image: url('lace.jpg'); padding-top: 2.5%; padding-bottom: 2.5%;">Work Experience</h1>
 
       <!-- WORK EXPERIENCE START -->
 
@@ -818,6 +822,9 @@
 
     </div>
 
+    <div class = "seperator" style = "background-image: url('leopard.png'); margin-top: 0; margin-bottom: 0; padding-top: 5%;">
+    </div>
+
     <div id = "achievement-container">
       <h1 id = "achievement_section" class="h1">Achievements</h1>
 
@@ -918,119 +925,6 @@
         </form>
       </div>
     </div>
-    
-      <!--
-      <style>/* reset */
-      #fs-frm input,
-      #fs-frm select,
-      #fs-frm textarea,
-      #fs-frm fieldset,
-      #fs-frm optgroup,
-      #fs-frm label,
-      #fs-frm #card-element:disabled {
-        font-family: inherit;
-        font-size: 100%;
-        color: inherit;
-        border: none;
-        border-radius: 0;
-        display: block;
-        width: 95%;
-        padding: 0;
-        /*margin: 0;*/
-        margin-right: 25%;
-        margin-left: 5%;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-      }
-      #fs-frm label,
-      #fs-frm legend,
-      #fs-frm ::placeholder {
-        font-size: .825rem;
-        margin-bottom: .5rem;
-        padding-top: .2rem;
-        display: flex;
-        align-items: baseline;
-      }
-      
-      /* border, padding, margin, width */
-      #fs-frm input,
-      #fs-frm select,
-      #fs-frm textarea,
-      #fs-frm #card-element {
-        border: 1px solid rgba(0,0,0,0.2);
-        background-color: rgba(255,255,255,0.9);
-        padding: .75em 1rem;
-        margin-bottom: 1.5rem;
-      }
-      #fs-frm input:focus,
-      #fs-frm select:focus,
-      #fs-frm textarea:focus {
-        background-color: white;
-        outline-style: solid;
-        outline-width: thin;
-        outline-color: gray;
-        outline-offset: -1px;
-      }
-      #fs-frm [type="text"],
-      #fs-frm [type="email"] {
-        width: 100%;
-      }
-      #fs-frm [type="button"],
-      #fs-frm [type="submit"],
-      #fs-frm [type="reset"] {
-        width: auto;
-        cursor: pointer;
-        -webkit-appearance: button;
-        -moz-appearance: button;
-        appearance: button;
-      }
-      #fs-frm [type="button"]:focus,
-      #fs-frm [type="submit"]:focus,
-      #fs-frm [type="reset"]:focus {
-        outline: none;
-      }
-      #fs-frm [type="submit"],
-      #fs-frm [type="reset"] {
-        margin-bottom: 0;
-      }
-      #fs-frm select {
-        text-transform: none;
-      }
-      
-      #fs-frm [type="checkbox"] {
-        -webkit-appearance: checkbox;
-        -moz-appearance: checkbox;
-        appearance: checkbox;
-        display: inline-block;
-        width: auto;
-        margin: 0 .5em 0 0 !important;
-      }
-      
-      #fs-frm [type="radio"] {
-        -webkit-appearance: radio;
-        -moz-appearance: radio;
-        appearance: radio;
-      }
-      
-      /* address, locale */
-      #fs-frm fieldset.locale input[name="city"],
-      #fs-frm fieldset.locale select[name="state"],
-      #fs-frm fieldset.locale input[name="postal-code"] {
-        display: inline;
-      }
-      #fs-frm fieldset.locale input[name="city"] {
-        width: 52%;
-      }
-      #fs-frm fieldset.locale select[name="state"],
-      #fs-frm fieldset.locale input[name="postal-code"] {
-        width: 20%;
-      }
-      #fs-frm fieldset.locale input[name="city"],
-      #fs-frm fieldset.locale select[name="state"] {
-        margin-right: 3%;
-      }
-      </style>
-      -->
 
     <footer class="bg-body-tertiary text-center" style = "background-image: url('leopard.png');">
       <div class="container p-4 pb-0">
@@ -1039,7 +933,7 @@
           <a
             data-mdb-ripple-init
             class="btn text-white btn-floating m-1"
-            style="background-color: #0082ca;"
+            style="background-color: pink; border: 4px solid #C2D076;"
             href="https://www.linkedin.com/in/kayleigh-dinatale"
             role="button"
             ><i class="fab fa-linkedin-in"></i
@@ -1047,7 +941,7 @@
           <a
             data-mdb-ripple-init
             class="btn text-white btn-floating m-1"
-            style="background-color: #333333;"
+            style="background-color: pink; border: 4px solid #C2D076;"
             href="https://github.com/Kdinatale"
             role="button"
             ><i class="fab fa-github"></i
@@ -1055,7 +949,7 @@
           <a
           data-mdb-ripple-init
           class="btn text-white btn-floating m-1"
-          style="background-color: #333333;"
+          style="background-color: pink; border: 4px solid #C2D076;"
           href="mailto:dinatalekayleigh@gmail.com"
           role="button"
           ><i class="fab fa-google"></i
