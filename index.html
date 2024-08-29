@@ -22,11 +22,11 @@
 
     <style>
       /* .banner img {
-            width: 100%;
-            height: auto;
-            display: block;
-            margin-top: 40%;
-      } */
+                  width: 100%;
+                  height: auto;
+                  display: block;
+                  margin-top: 40%;
+            } */
 
       .carousel-icon-1 {
         position: absolute;
@@ -75,13 +75,6 @@
         border: 5px solid #ffc958;
       }
 
-      /*         
-        .block-element{
-          width: 75%;
-          margin-right: 5%;
-          margin-left: 12%;
-        } */
-
       label {
         color: pink;
         font-family: "Shrikhand";
@@ -91,7 +84,6 @@
       /* Project CSS */
       .project-container .card .card-footer:hover {
         background-color: grey;
-        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); */
       }
       .project-container .card-footer {
         border-radius: 10px;
@@ -106,10 +98,6 @@
         margin-right: 5%;
         border: 20px solid white;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-        /* #38040E; */
-        /* #C2D076; */
-        /* border-image: url('leopard.png') 30 round; */
       }
 
       .project-container .card:hover {
@@ -124,12 +112,20 @@
       }
 
       /* .work-experience .card-footer .btn {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            border-radius: 0;
-            text-align: center;
-        }    */
+                  width: 100%;
+                  height: 100%;
+                  margin: 0;
+                  border-radius: 0;
+                  text-align: center;
+              }    */
+
+      .work-experience .col-md-4 {
+        display: flex;
+      }
+
+      .work-experience {
+        height: auto;
+      }
 
       .work-experience .card-img-top {
         width: 100%;
@@ -139,24 +135,25 @@
 
       .work-experience .row {
         width: 90%;
-        margin-right: 8%;
-        margin-left: 8%;
+        background-color: pink;
+        margin-right: auto;
+        margin-left: auto;
         margin-top: 2.5%;
         margin-bottom: 2.5%;
-        justify-content: center;
       }
 
-      .work-experience .card-body {
-        /* flex: none; */
-        /* padding: 1rem; */
-        width: 100%;
-        height: 50%;
-      }
+      /*TEST*/
+      /* .work-experience .card-body {
+              /* flex: none; */
+      /* padding: 1rem; */
+      /* width: 100%; */
+      /* height: 50%; */
+      /* } */
 
       /* .work-experience .card:hover {
-          transform: scale(1.06);
-          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        } */
+                transform: scale(1.06);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+              } */
 
       .work-experience .card-container {
         perspective: 1000px;
@@ -164,25 +161,30 @@
       }
 
       .work-experience .card {
-        margin-top: 5%;
-        margin-bottom: 5%;
-        width: 100%;
         display: flex;
         flex-direction: column;
+        /* margin-top: 5%;
+        margin-bottom: 5%; */
+        width: 100%;
+        /* display: flex;
+        flex-direction: column; */
         /*height: 100%;*/
         margin-left: 2.5%;
         margin-right: 2.5%;
-        transform: rotateY(0deg);
+        /* transform: rotateY(0deg); */
         transition: transform 0.6s ease;
         transform-style: preserve-3d;
+        background-color: transparent;
+        border: none;
+        /* position: relative; */
       }
 
       /*WORKING ON FLIP*/
 
       /* .work-experience .card-side{
-          /* position: absolute; */
+                /* position: absolute; */
       /* width: 100%;
-          height: 100%; */
+                height: 100%; */
       /* -webkit-backface-visibility: hidden; */
       /* backface-visibility: hidden; */
       /* } */
@@ -192,19 +194,22 @@
         transition: transform 0.5s ease;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-        position: absolute;
-        background-color: white;
+        /* background-color: white; */
         width: 100%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        flex: 1;
       }
 
       .work-experience .card-back .card-body {
         width: 100%;
-        height: auto;
+        flex: 1;
       }
 
       .work-experience .card-back {
         transform: perspective(1000px) rotateY(180deg);
+        position: absolute;
+        background-color: pink;
+        height: 100%;
       }
 
       .work-experience .card-back.flipped {
@@ -213,10 +218,28 @@
 
       .work-experience .card-front {
         transform: perspective(1000px) rotateY(0deg);
+        background-color: orange;
+        height: 100%;
       }
 
       .work-experience .card-front.flipped {
         transform: perspective(1000px) rotateY(-180deg);
+      }
+
+      .work-experience .card-footer {
+        background-color: pink;
+        margin-top: auto;
+      }
+
+      .work-experience .card-top {
+        height: 50%;
+      }
+      .work-experience .card-back .card-body {
+        height: 40%;
+      }
+
+      .work-experience .card-back .card-footer {
+        height: 10%;
       }
 
       .form-container {
@@ -302,23 +325,23 @@
         margin-left: auto;
       }
       /*
-        .left p{
-          width: 75%;
-          font-size: 1.5vw;
-          margin-right: 0%;
-          background-color: pink;
-          text-align: right;
-        }
+              .left p{
+                width: 75%;
+                font-size: 1.5vw;
+                margin-right: 0%;
+                background-color: pink;
+                text-align: right;
+              }
 
-        .left h2{
-          font-size: 3vw;
-        }
-        .left .btn{
-          font-size: 2vw 2vh;
-          width: 20vh;
-          height: 5vh;
-        }
-*/
+              .left h2{
+                font-size: 3vw;
+              }
+              .left .btn{
+                font-size: 2vw 2vh;
+                width: 20vh;
+                height: 5vh;
+              }
+      */
       .right {
         flex: 1;
         background-image: url("grad_photo.jpg");
@@ -326,17 +349,17 @@
         background-position: center;
         background-repeat: no-repeat;
       }
-      /*         
-        .right img{
-          width: 100%;
-          height: 100%;;
-          object-fit: cover;
-        } */
+      /*
+              .right img{
+                width: 100%;
+                height: 100%;;
+                object-fit: cover;
+              } */
 
-      /* 
-        COLORS: 
-          #C2D076;
-        */
+      /*
+              COLORS:
+                #C2D076;
+              */
     </style>
   </head>
   <body>
@@ -829,7 +852,7 @@
         <div class="row">
           <div class="col-md-4">
             <!-- <div id = "card-container" class = "card-container"> -->
-            <div id="card" class="card">
+            <div id="card" class="card h-100">
               <div id="card-front-1" class="card-side card-front">
                 <img
                   class="card-img-top"
@@ -891,7 +914,7 @@
           </div>
 
           <div class="col-md-4">
-            <div class="card">
+            <div class="card h-100">
               <!-- border-image: url('leopard.png') 30 round; -->
               <div id="card-front-2" class="card-side card-front">
                 <img
@@ -952,7 +975,7 @@
           </div>
 
           <div class="col-md-4">
-            <div class="card">
+            <div class="card h-100">
               <img
                 class="card-img-top"
                 src="mount_sinai_logo.png"
@@ -998,11 +1021,11 @@
         <!--</div> container end -->
         <div class="sep"></div>
 
-        <!-- Row 1 -->
+        <!-- Row 2 -->
 
         <div class="row">
           <div class="col-md-4">
-            <div class="card">
+            <div class="card h-100">
               <div id="card-front-4" class="card-side card-front">
                 <img
                   class="card-img-top"
@@ -1062,7 +1085,7 @@
           </div>
 
           <div class="col-md-4">
-            <div class="card">
+            <div class="card h-100">
               <div id="card-front-5" class="card-side card-front">
                 <img
                   class="card-img-top"
@@ -1122,7 +1145,7 @@
           </div>
 
           <div class="col-md-4">
-            <div class="card">
+            <div class="card h-100">
               <div id="card-front-6" class="card-side card-front">
                 <img
                   class="card-img-top"
@@ -1301,7 +1324,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
-    </div> -->
+        </div> -->
 
         <!-- WORK EXPERIENCE END -->
       </div>
