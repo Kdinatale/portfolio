@@ -20,15 +20,6 @@
       crossorigin="anonymous"
     ></script>
     <style>      
-    
-        /* No Effect */
-        /* .work-experience .col-md-4 {
-            display: flex;
-        } */
-
-        /* .work-experience {
-            height: auto;
-        } */
 
         .work-experience .card-img-top {
             width: 100%;
@@ -37,8 +28,7 @@
         }
 
         .work-experience .row {
-            /* width: 80%; */
-            background-color: pink;
+            background-color: grey;
             margin-right: auto;
             margin-left: auto;
             border: 5px black solid;
@@ -57,14 +47,13 @@
             transform-style: preserve-3d;
             background-color: transparent;
             border: none;
-            /* height: 80%; */
-            background-color: red;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .work-experience li{
-            background: pink;
             height: 4.25em;
-            /* font-size: .5vw+1vh; */
+            text-align: center;
         }
 
 
@@ -75,29 +64,34 @@
             transition: transform 0.5s ease;
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
-            /* background-color: white; */
             width: 100%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            /* flex: 1; */
             height: 90%;
+            padding-bottom: 2%;
         }
-
-        /* .work-experience .card-back .card-body {
-            width: 100%;
-            flex: 1;
-        } */
 
         .work-experience .card-back {
             transform: perspective(1000px) rotateY(180deg);
             position: absolute;
-            background-color: green;
+            background-color: white;
             margin-top: auto;
             margin-bottom: auto;
 
         }
 
+        .work-experience .card-back .card-body h5{
+            background-color: yellowgreen;
+            text-align: center;
+        }
+
+        .work-experience .card-back .card-body p{
+            background-color: yellow;
+            height: 95%;
+            text-align: center;
+            overflow-x: scroll;
+        }
+
         .work-experience .card-back .card-body{
-            background-color: brown;
             height: 100%;
         }
 
@@ -107,7 +101,7 @@
 
         .work-experience .card-front {
             transform: perspective(1000px) rotateY(0deg);
-            background-color: orange;
+            background-color: white;
 
         }
 
@@ -116,24 +110,14 @@
         }
 
         .work-experience .card-footer {
-            background-color: purple;
+            background-color: wheat;
+            text-align: center;
         }
 
-        /* .work-experience .card-top {
-            height: 50%;
-        } */
-        
-        /* .work-experience .card-back .card-body {
-            height: 40%;
-        } */
+        .work-experience .card-footer .btn{
+            width: 100%;
+        }
 
-        /* .work-experience .card-back .card-footer {
-            height: 10%;
-        } */
-
-        /* .work-experience .card-front .card-body {
-            flex: 1 1 auto;
-        } */
       </style>
   </head>
   <body>
@@ -142,13 +126,12 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <h>test</h>
 
           <!-- WORK EXPERIENCE START -->
 
           <div class="work-experience">
             <div class="row">
-              <div class="col-xs-12 col-sm-10 col-md-6 col-lg-4 mb-3 mt-3 justify-content-center">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mb-3 mt-3 justify-content-center">
                 <div id="card" class="card h-100">
                   <div id="card-front-1" class="card-side card-front">
                     <img
@@ -157,7 +140,7 @@
                       alt="Company logo"
                     />
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+                      <!-- <h5 class="card-title">Card title</h5> -->
                       <ul class="list-group">
                         <li class="list-group-item list-group-item-success">
                           <i class="fa fa-briefcase" style="font-size: 20px"></i>
@@ -191,10 +174,27 @@
                   </div>
     
                   <div id="card-back-1" class="card-side card-back">
-                    <div class="card-top">
-                      <h5 class="card-title">testing</h5>
+                    <!-- <div class="card-top"> -->
+                    <!-- </div> -->
+                    <div class="card-body">
+                        <h5 class="card-title">testing</h5>
+                        <p>
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+
+                        </p>
+                    
                     </div>
-                    <div class="card-body">Testing</div>
                     <div id="card-footer" class="card-footer">
                       <button
                         type="button"
@@ -209,7 +209,7 @@
                 </div>
               </div>
     
-              <div class="col-xs-12 col-sm-10 col-md-6 col-lg-4 mb-3 mt-3 justify-content-center">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mb-3 mt-3 justify-content-center">
                 <div class="card h-100">
                   <!-- border-image: url('leopard.png') 30 round; -->
                   <div id="card-front-2" class="card-side card-front">
@@ -219,7 +219,7 @@
                       alt="Company logo"
                     />
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+                      <!-- <h5 class="card-title">Card title</h5> -->
                       <ul class="list-group">
                         <li class="list-group-item list-group-item-success">
                           <i class="fa fa-briefcase" style="font-size: 20px"></i>
@@ -252,10 +252,26 @@
                   </div>
     
                   <div id="card-back-2" class="card-side card-back">
-                    <div class="card-top">
-                      <h5 class="card-title">testing</h5>
+                    <!-- <div class="card-top"> -->
+                    <!-- </div> -->
+                    <div class="card-body">
+                        <h5 class="card-title">testing</h5>
+                        <p>
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+
+                        </p>
                     </div>
-                    <div class="card-body">Testing</div>
                     <div id="card-footer" class="card-footer">
                       <button
                         type="button"
@@ -270,7 +286,7 @@
                 </div>
               </div>
     
-              <div class="col-xs-12 col-sm-10 col-md-6 col-lg-4 mb-3 mt-3 justify-content-center">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mb-3 mt-3 justify-content-center">
                 <div class="card h-100">
                   <div id="card-front-3" class="card-side card-front">
                     <img
@@ -279,7 +295,7 @@
                       alt="Company logo"
                     />
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+                      <!-- <h5 class="card-title">Card title</h5> -->
                       <ul class="list-group">
                         <li class="list-group-item list-group-item-success">
                           <i class="fa fa-briefcase" style="font-size: 20px"></i>
@@ -311,10 +327,27 @@
                     </div>
                   </div>
                   <div id="card-back-3" class="card-side card-back">
-                    <div class="card-top">
-                      <h5 class="card-title">testing</h5>
+                    <!-- <div class="card-top"> -->
+                    <!-- </div> -->
+                    <div class="card-body">
+                        <h5 class="card-title">testing</h5>
+                        <p>
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+
+                        </p>
+
                     </div>
-                    <div class="card-body">Testing</div>
                     <div id="card-footer" class="card-footer">
                       <button
                         type="button"
@@ -333,7 +366,7 @@
             <!-- Row 2 -->
     
             <!-- <div class="row"> -->
-              <div class="col-xs-12 col-sm-10 col-md-6 col-lg-4 mb-3 mt-3 justify-content-center">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mb-3 mt-3 justify-content-center">
                 <div class="card h-100">
                   <div id="card-front-4" class="card-side card-front">
                     <img
@@ -342,7 +375,7 @@
                       alt="Company logo"
                     />
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+                      <!-- <h5 class="card-title">Card title</h5> -->
                       <ul class="list-group">
                         <li class="list-group-item list-group-item-success">
                           <i class="fa fa-briefcase" style="font-size: 20px"></i>
@@ -375,10 +408,26 @@
                   </div>
     
                   <div id="card-back-4" class="card-side card-back">
-                    <div class="card-top">
-                      <h5 class="card-title">testing</h5>
+                    <!-- <div class="card-top"> -->
+                    <!-- </div> -->
+                    <div class="card-body">
+                        <h5 class="card-title">testing</h5>
+                        <p>
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+
+                        </p>
                     </div>
-                    <div class="card-body">Testing</div>
                     <div id="card-footer" class="card-footer">
                       <button
                         type="button"
@@ -393,7 +442,7 @@
                 </div>
               </div>
     
-              <div class="col-xs-12 col-sm-10 col-md-6 col-lg-4 mb-3 mt-3 justify-content-center">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mb-3 mt-3 justify-content-center">
                 <div class="card h-100">
                   <div id="card-front-5" class="card-side card-front">
                     <img
@@ -402,7 +451,7 @@
                       alt="Company logo"
                     />
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+                      <!-- <h5 class="card-title">Card title</h5> -->
                       <ul class="list-group">
                         <li class="list-group-item list-group-item-success">
                           <i class="fa fa-briefcase" style="font-size: 20px"></i>
@@ -435,10 +484,27 @@
                   </div>
     
                   <div id="card-back-5" class="card-side card-back">
-                    <div class="card-top">
-                      <h5 class="card-title">testing</h5>
+                    <!-- <div class="card-top"> -->
+                    <!-- </div> -->
+                    <div class="card-body">
+                        <h5 class="card-title">testing</h5>
+                        <p>
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+
+                        </p>
                     </div>
-                    <div class="card-body">Testing</div>
+
                     <div id="card-footer" class="card-footer">
                       <button
                         type="button"
@@ -453,7 +519,7 @@
                 </div>
               </div>
     
-              <div class="col-xs-12 col-sm-10 col-md-6 col-lg-4 mb-3 mt-3 justify-content-center">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mb-3 mt-3 justify-content-center">
                 <div class="card h-100">
                   <div id="card-front-6" class="card-side card-front">
                     <img
@@ -462,7 +528,7 @@
                       alt="Company logo"
                     />
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+                      <!-- <h5 class="card-title">Card title</h5> -->
                       <ul class="list-group">
                         <li class="list-group-item list-group-item-success">
                           <i class="fa fa-briefcase" style="font-size: 20px"></i>
@@ -495,10 +561,26 @@
                   </div>
     
                   <div id="card-back-6" class="card-side card-back">
-                    <div class="card-top">
-                      <h5 class="card-title">testing</h5>
+                    <!-- <div class="card-top"> -->
+                    <!-- </div> -->
+                    <div class="card-body">
+                        <h5 class="card-title">testing</h5>
+                        <p>
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+                            Testing Testing Testing Testing Testing Testing Testing Testing 
+
+                        </p>
                     </div>
-                    <div class="card-body">Testing</div>
                     <div id="card-footer" class="card-footer">
                       <button
                         type="button"
