@@ -46,6 +46,18 @@
         background-color: #bfcf64;
       } */
 
+      body {
+        background-color: #5e3c31;
+      }
+
+      .seperator {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        background-color: #780000;
+      }
+
       .carousel-inner {
         background-color: #bfcf64;
       }
@@ -75,7 +87,7 @@
       }
 
       .h1 {
-        color: #784f41;
+        color: #780000;
         /* font-family: "Shrikhand";
         font-size: 5vw; */
         text-align: center;
@@ -144,6 +156,8 @@
 
       .project-container .card {
         height: 100%;
+        border-image: url("lace.jpg");
+        border: 20px solid #780000;
       }
 
       .project-container .card-footer {
@@ -166,7 +180,14 @@
       /* Work Experience Styling */
 
       .work-experience {
-        background-color: #c2d076;
+        /* background: repeating-linear-gradient(
+          to right,
+          #039be5 0px,
+          #039be5 20px,
+          #90caf9 20px,
+          #90caf9 40px
+        );         */
+        background-color: #5e3c31;
         padding-bottom: 3%;
       }
 
@@ -174,7 +195,6 @@
         background-image: url("lace.jpg");
         padding-top: 3%;
         padding-bottom: 3%;
-        color: #784f41;
       }
 
       .work-experience .card-img-top {
@@ -290,7 +310,7 @@
       }
 
       .contact-section .h1 {
-        margin-bottom: 3%;
+        margin-bottom: 4%;
       }
 
       .form-container {
@@ -337,7 +357,7 @@
         overflow: hidden;
         background-color: #5e3c31;
         padding-top: 5%;
-        padding-bottom: 5%;
+        padding-bottom: 6%;
         /* font-family: "Playfair Display", serif;
         font-optical-sizing: auto;
         font-weight: 500;
@@ -373,6 +393,7 @@
 
       .about-container .photo-strip {
         width: 90%;
+        height: 100vh;
       }
 
       .about-container .right-side {
@@ -413,6 +434,9 @@
         width: 40%;
         margin-right: auto;
         margin-left: auto;
+      }
+
+      footer {
       }
 
       /* .about-section {
@@ -587,7 +611,7 @@
               style="width: 80%; height: auto"
             /> -->
               <img
-                src="photo_strip.png"
+                src="filled_photo_strip.png"
                 class="photo-strip card-img-top img-fluid"
                 alt="..."
               />
@@ -641,6 +665,8 @@
     </div> -->
 
     <div style="clear: both"></div>
+
+    <div class="seperator"></div>
 
     <div class="project-container">
       <h1 id="project_section" class="h1">Projects</h1>
@@ -1390,16 +1416,6 @@
       </div>
     </div>
 
-    <div
-      class="seperator"
-      style="
-        background-image: url('leopard.png');
-        margin-top: 0;
-        margin-bottom: 0;
-        padding-top: 5%;
-      "
-    ></div>
-
     <!-- <div id="achievement-container">
       <h1 id="achievement_section" class="h1">Achievements</h1>
 
@@ -1526,6 +1542,7 @@
       >
 
     </div> -->
+    <div class="seperator"></div>
 
     <div class="contact-section">
       <h1 id="contact_section" class="h1">Contact Me</h1>
