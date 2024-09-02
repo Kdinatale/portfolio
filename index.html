@@ -15,12 +15,25 @@
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
     <script
       src="https://kit.fontawesome.com/80b31ca5d3.js"
       crossorigin="anonymous"
     ></script>
 
     <style>
+      /* .playfair-display-font {
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      } */
       /* .banner img {
                   width: 100%;
                   height: auto;
@@ -63,9 +76,15 @@
 
       .h1 {
         color: #784f41;
-        font-family: "Shrikhand";
-        font-size: 5vw;
+        /* font-family: "Shrikhand";
+        font-size: 5vw; */
         text-align: center;
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 4em;
+        font-weight: 900;
       }
 
       .info-paragraph {
@@ -85,8 +104,13 @@
 
       label {
         color: pink;
-        font-family: "Shrikhand";
-        font-size: 2vw;
+        /* font-family: "Shrikhand";
+        font-size: 2vw; */
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 1.65em;
       }
 
       /* Project CSS */
@@ -311,20 +335,26 @@
 
       .about-container {
         overflow: hidden;
-        /* display: flex;
-        align-items: center; */
-        /* margin-bottom: 2%; */
-        background-color: #784f41;
+        background-color: #5e3c31;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        /* font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal; */
       }
 
       .about-container .full-about {
-        background-color: pink;
+        background-color: #784f41;
         position: relative;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.425);
         overflow: hidden;
-        width: 70%;
         margin-left: auto;
         margin-right: auto;
+        height: 75vh;
+        display: flex;
+        align-items: center;
+        width: 90%;
       }
 
       .about-container .left-image-side {
@@ -358,8 +388,32 @@
         height: 100%;
       }
 
-      /* .about-container .right-text {
-      } */
+      .about-container .right-text {
+        margin-right: 3%;
+        margin-left: 3%;
+      }
+
+      .about-container .right-text h1 {
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 4em;
+      }
+
+      .about-container .right-text p {
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.65em;
+      }
+
+      .about-container hr {
+        width: 40%;
+        margin-right: auto;
+        margin-left: auto;
+      }
 
       /* .about-section {
         display: flex;
@@ -542,10 +596,12 @@
           <div class="right-side">
             <div class="right-text">
               <h1>About Me</h1>
-              <h2>I'm Kayleigh DiNatale</h2>
-              <h3>
-                A Computer Science Graduate Student at Villanova University
-              </h3>
+              <hr />
+              <p>
+                I'm Kayleigh DiNatale. A Computer Science Graduate Student at
+                Villanova University.
+              </p>
+
               <!-- <img src="blue_bow.png" class="card-img-top img-fluid" alt="..." style = "width: 30%;"> -->
             </div>
           </div>
