@@ -31,7 +31,6 @@
       .container-fluid,
       .offcanvas {
         background-color: #bfcf64;
-        /* border: 10px solid #bfcf64; */
       }
 
       .carousel-inner {
@@ -111,6 +110,18 @@
         text-align: center;
       }
 
+      .project-container .card-footer:hover {
+        text-align: center;
+      }
+
+      .project-container .card-title,
+      .card-text {
+        text-align: center;
+      }
+
+      .project-container .pill-group {
+        text-align: center;
+      }
       /* Work Experience Styling */
 
       .work-experience .card-img-top {
@@ -343,7 +354,10 @@
     </div>
 
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+        data-bs-theme="dark"
+      >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="logo.png" alt="Bootstrap" width="55" height="55" />
@@ -530,29 +544,32 @@
             <div class="card-body">
               <h5 class="card-title">Roomie Radar</h5>
               <p class="card-text">...</p>
-              <span
-                class="badge badge-pill badge-custom-size"
-                style="background-color: pink"
-                >React.js</span
-              >
-              <span class="badge badge-pill" style="background-color: pink"
-                >Cloud Firestore</span
-              >
-              <span class="badge badge-pill" style="background-color: pink"
-                >Node.js</span
-              >
-              <span class="badge badge-pill" style="background-color: pink"
-                >Figma</span
-              >
-              <span class="badge badge-pill" style="background-color: pink"
-                >Firebase Storage</span
-              >
-              <span class="badge badge-pill" style="background-color: pink"
-                >Bootstrap</span
-              >
-              <span class="badge badge-pill" style="background-color: pink"
-                >CSS</span
-              >
+
+              <div class="pill-group">
+                <span
+                  class="badge badge-pill badge-custom-size"
+                  style="background-color: pink"
+                  >React.js</span
+                >
+                <span class="badge badge-pill" style="background-color: pink"
+                  >Cloud Firestore</span
+                >
+                <span class="badge badge-pill" style="background-color: pink"
+                  >Node.js</span
+                >
+                <span class="badge badge-pill" style="background-color: pink"
+                  >Figma</span
+                >
+                <span class="badge badge-pill" style="background-color: pink"
+                  >Firebase Storage</span
+                >
+                <span class="badge badge-pill" style="background-color: pink"
+                  >Bootstrap</span
+                >
+                <span class="badge badge-pill" style="background-color: pink"
+                  >CSS</span
+                >
+              </div>
             </div>
 
             <div class="card-footer" onclick="handleClick()">Learn More</div>
@@ -568,15 +585,17 @@
             <div class="card-body">
               <h5 class="card-title">Online Shopping Database</h5>
               <p class="card-text">...</p>
-              <span class="badge badge-pill" style="background-color: pink"
-                >SQL</span
-              >
-              <span class="badge badge-pill" style="background-color: pink"
-                >Oracle SQL Developer</span
-              >
-              <span class="badge badge-pill" style="background-color: pink"
-                >Github</span
-              >
+              <div class="pill-group">
+                <span class="badge badge-pill" style="background-color: pink"
+                  >SQL</span
+                >
+                <span class="badge badge-pill" style="background-color: pink"
+                  >Oracle SQL Developer</span
+                >
+                <span class="badge badge-pill" style="background-color: pink"
+                  >Github</span
+                >
+              </div>
             </div>
 
             <div class="card-footer" onclick="handleClick()">Learn More</div>
@@ -599,29 +618,32 @@
             <div class="card-body">
               <h5 class="card-title">Christmas Shopping Project</h5>
               <p class="card-text">...</p>
-              <span
-                class="badge badge-pill badge-custom-size"
-                style="background-color: pink"
-                >React.js</span
-              >
-              <span class="badge badge-pill" style="background-color: pink"
-                >Cloud Firestore</span
-              >
-              <span class="badge badge-pill" style="background-color: pink"
-                >Node.js</span
-              >
-              <span class="badge badge-pill" style="background-color: pink"
-                >Figma</span
-              >
-              <span class="badge badge-pill" style="background-color: pink"
-                >Firebase Storage</span
-              >
-              <span class="badge badge-pill" style="background-color: pink"
-                >Bootstrap</span
-              >
-              <span class="badge badge-pill" style="background-color: pink"
-                >CSS</span
-              >
+
+              <div class="pill-group">
+                <span
+                  class="badge badge-pill badge-custom-size"
+                  style="background-color: pink"
+                  >React.js</span
+                >
+                <span class="badge badge-pill" style="background-color: pink"
+                  >Cloud Firestore</span
+                >
+                <span class="badge badge-pill" style="background-color: pink"
+                  >Node.js</span
+                >
+                <span class="badge badge-pill" style="background-color: pink"
+                  >Figma</span
+                >
+                <span class="badge badge-pill" style="background-color: pink"
+                  >Firebase Storage</span
+                >
+                <span class="badge badge-pill" style="background-color: pink"
+                  >Bootstrap</span
+                >
+                <span class="badge badge-pill" style="background-color: pink"
+                  >CSS</span
+                >
+              </div>
             </div>
 
             <div class="card-footer" onclick="handleClick()">Learn More</div>
@@ -635,15 +657,18 @@
             <div class="card-body">
               <h5 class="card-title">Online Shopping Database</h5>
               <p class="card-text">...</p>
-              <span class="badge badge-pill" style="background-color: pink"
-                >SQL</span
-              >
-              <span class="badge badge-pill" style="background-color: pink"
-                >Oracle SQL Developer</span
-              >
-              <span class="badge badge-pill" style="background-color: pink"
-                >Github</span
-              >
+
+              <div class="pill-group">
+                <span class="badge badge-pill" style="background-color: pink"
+                  >SQL</span
+                >
+                <span class="badge badge-pill" style="background-color: pink"
+                  >Oracle SQL Developer</span
+                >
+                <span class="badge badge-pill" style="background-color: pink"
+                  >Github</span
+                >
+              </div>
             </div>
 
             <div class="card-footer" onclick="handleClick()">Learn More</div>
