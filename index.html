@@ -142,7 +142,7 @@
       /* Work Experience Styling */
 
       .work-experience {
-        background-color: #039be5;
+        background-color: #c2d076;
         padding-bottom: 3%;
       }
 
@@ -160,7 +160,6 @@
       }
 
       .work-experience .row {
-        background-color: #039be5;
         margin-right: auto;
         margin-left: auto;
         margin-top: 3%;
@@ -254,12 +253,28 @@
         width: 100%;
       }
 
+      .contact-section {
+        background: repeating-linear-gradient(
+          to right,
+          #039be5 0px,
+          #039be5 20px,
+          #90caf9 20px,
+          #90caf9 40px
+        );
+        padding-bottom: 5%;
+        padding-top: 5%;
+      }
+
+      .contact-section .h1 {
+        margin-bottom: 3%;
+      }
+
       .form-container {
         margin-left: auto;
         margin-right: auto;
         text-align: center;
-        margin-bottom: 5%;
-        margin-top: 2.5%;
+        /* margin-bottom: 5%; */
+        /* margin-top: 2.5%; */
         border: 30px solid;
         border-image: url("lace.jpg") 40 round;
         border-radius: 15px;
@@ -294,7 +309,59 @@
         box-shadow: black;
       }
 
-      .about-section {
+      .about-container {
+        overflow: hidden;
+        /* display: flex;
+        align-items: center; */
+        /* margin-bottom: 2%; */
+        background-color: #784f41;
+      }
+
+      .about-container .full-about {
+        background-color: pink;
+        position: relative;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.425);
+        overflow: hidden;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .about-container .left-image-side {
+        width: 50%;
+      }
+
+      .about-container .pic-overlay {
+        background-image: url("lace.jpg");
+        width: 80%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.425);
+        transform: rotate(-30deg);
+      }
+
+      .about-container .photo-strip {
+        width: 90%;
+      }
+
+      .about-container .right-side {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        text-align: center;
+        background-color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+
+      /* .about-container .right-text {
+      } */
+
+      /* .about-section {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -311,9 +378,9 @@
       .right {
         padding: 20px;
         color: white;
-      }
+      } */
 
-      .left {
+      /* .left {
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -336,7 +403,7 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-      }
+      } */
     </style>
   </head>
   <body>
@@ -454,39 +521,11 @@
 
     <br />
 
-    <!-- <h1 id="about_section" class="h1">About Me</h1> -->
-    <div style="background-color: aquamarine; overflow: hidden; display: flex">
-      <div
-        style="
-          width: 90%;
-          margin-left: auto;
-          margin-right: auto;
-          align-items: center;
-        "
-      >
-        <div
-          style="
-            background-color: pink;
-            position: relative;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.425);
-            overflow: hidden;
-            height: 80%;
-            display: flex;
-            align-items: center;
-          "
-        >
-          <div class="left-image-side" style="width: 50%">
-            <div
-              style="
-                background-image: url('lace.jpg');
-                width: 80%;
-                text-align: center;
-                margin-left: auto;
-                margin-right: auto;
-                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.425);
-                transform: rotate(-30deg);
-              "
-            >
+    <div class="about-container">
+      <div class="about-holder-2">
+        <div class="full-about">
+          <div class="left-image-side">
+            <div class="pic-overlay">
               <!-- <img
               src="flowers.jpg"
               class="card-img-top img-fluid"
@@ -495,27 +534,13 @@
             /> -->
               <img
                 src="photo_strip.png"
-                class="card-img-top img-fluid"
+                class="photo-strip card-img-top img-fluid"
                 alt="..."
-                style="width: 90%; height: 100%"
               />
             </div>
           </div>
-          <div
-            style="
-              position: absolute;
-              top: 0;
-              right: 0;
-              width: 50%;
-              text-align: center;
-              background-color: blue;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              height: 100%;
-            "
-          >
-            <div>
+          <div class="right-side">
+            <div class="right-text">
               <h1>About Me</h1>
               <h2>I'm Kayleigh DiNatale</h2>
               <h3>
@@ -1446,8 +1471,9 @@
 
     </div> -->
 
-    <h1 id="contact_section" class="h1">Contact Me</h1>
-    <div>
+    <div class="contact-section">
+      <h1 id="contact_section" class="h1">Contact Me</h1>
+
       <div class="form-container">
         <!-- style = "display: flex; justify-content: center; align-items: center;"> -->
         <form
