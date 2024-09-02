@@ -107,6 +107,10 @@
         height: 100%;
       }
 
+      .project-container .card-footer {
+        text-align: center;
+      }
+
       /* Work Experience Styling */
 
       .work-experience .card-img-top {
@@ -407,52 +411,75 @@
     <br />
 
     <!-- <h1 id="about_section" class="h1">About Me</h1> -->
-    <div style="width: 90%; margin-left: auto; margin-right: auto">
+    <div style="background-color: aquamarine; overflow: hidden; display: flex">
       <div
         style="
-          background-color: pink;
-          padding-bottom: 5%;
-          padding-top: 5%;
-          position: relative;
-          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.425);
+          width: 90%;
+          margin-left: auto;
+          margin-right: auto;
+          align-items: center;
         "
       >
-        <div style="width: 50%">
-          <div
-            style="
-              background-image: url('lace.jpg');
-              width: 70%;
-              text-align: center;
-              padding-top: 4%;
-              padding-bottom: 4%;
-              margin-left: auto;
-              margin-right: auto;
-              box-shadow: 0 8px 16px rgba(0, 0, 0, 0.425);
-            "
-          >
-            <img
+        <div
+          style="
+            background-color: pink;
+            position: relative;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.425);
+            overflow: hidden;
+            height: 80%;
+            display: flex;
+            align-items: center;
+          "
+        >
+          <div class="left-image-side" style="width: 50%">
+            <div
+              style="
+                background-image: url('lace.jpg');
+                width: 80%;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.425);
+                transform: rotate(-30deg);
+              "
+            >
+              <!-- <img
               src="flowers.jpg"
               class="card-img-top img-fluid"
               alt="..."
               style="width: 80%; height: auto"
-            />
+            /> -->
+              <img
+                src="photo_strip.png"
+                class="card-img-top img-fluid"
+                alt="..."
+                style="width: 90%; height: 100%"
+              />
+            </div>
           </div>
-        </div>
-        <div
-          style="
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 50%;
-            margin-left: 5%;
-            margin-top: auto;
-            margin-bottom: auto;
-            text-align: center;
-          "
-        >
-          <h2>I'm Kayleigh DiNatale</h2>
-          <h3>A Computer Science Graduate Student at Villanova University</h3>
-          <!-- <img src="blue_bow.png" class="card-img-top img-fluid" alt="..." style = "width: 30%;"> -->
+          <div
+            style="
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 50%;
+              text-align: center;
+              background-color: blue;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 100%;
+            "
+          >
+            <div>
+              <h1>About Me</h1>
+              <h2>I'm Kayleigh DiNatale</h2>
+              <h3>
+                A Computer Science Graduate Student at Villanova University
+              </h3>
+              <!-- <img src="blue_bow.png" class="card-img-top img-fluid" alt="..." style = "width: 30%;"> -->
+            </div>
+          </div>
         </div>
       </div>
     </div>
