@@ -82,33 +82,38 @@
       }
 
       /* Project CSS */
-      .project-container .card .card-footer:hover {
+
+      /* .project-container .card-footer:hover {
         background-color: grey;
-      }
-      .project-container .card-footer {
+      } */
+      /* .project-container .card-footer {
         border-radius: 10px;
         margin-top: 2.5%;
         margin-bottom: 2.5%;
         width: 100%;
-      }
+      } */
 
-      .project-container .card {
+      /* .project-container .card {
         width: 60%;
         margin-left: 5%;
         margin-right: 5%;
         border: 20px solid white;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
+      } */
 
-      .project-container .card:hover {
+      /* .project-container .card:hover {
         transform: scale(1.05);
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-      }
+      } */
 
       .project-container .card-img-top {
         width: 100%;
         height: 400px;
         object-fit: cover;
+      }
+
+      .project-container .card {
+        height: 100%;
       }
 
       /* Work Experience Styling */
@@ -662,124 +667,74 @@
 
     <div style="clear: both"></div>
 
-    <div style="background-color: #380403; padding-top: 2.5%">
-      <h1
-        id="project_section"
-        class="h1"
-        style="
-          color: #c2d076;
-          padding-bottom: 2.5%;
-          margin-top: auto;
-          margin-bottom: auto;
-        "
-      >
-        Projects
-      </h1>
+    <div class="project-container">
+      <h1 id="project_section" class="h1">Projects</h1>
 
       <!-- PROJECTS START-->
-      <div
-        class="project-container justify-content-center"
-        style="padding-top: 5%; padding-bottom: 5%"
-      >
-        <!-- background-image: url('leopard.png');  -->
 
-        <div
-          class="row-container"
-          style="display: flex; justify-content: center; justify-items: center"
-        >
-          <div
-            class="row"
-            style="
-              display: flex;
-              justify-items: evenly;
-              width: 75%;
-              display: flex;
-            "
-          >
-            <!-- style = "background-color: blue; width: 75%;"> -->
+      <div class="row justify-content-center">
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-xs-8 mb-3 mt-3">
+          <div class="card">
+            <img src="roomie_project.png" class="card-img-top" alt="..." />
 
-            <div class="col-lg-6 d-flex justify-content-end">
-              <div class="card" style="margin-top: 5%; width: 100%">
-                <img
-                  src="roomie_project.png"
-                  class="card-img-top img-fluid rounded-start"
-                  alt="..."
-                />
-
-                <div class="card-body">
-                  <h5 class="card-title">Roomie Radar</h5>
-                  <p class="card-text">...</p>
-                  <span
-                    class="badge badge-pill badge-custom-size"
-                    style="background-color: pink"
-                    >React.js</span
-                  >
-                  <span class="badge badge-pill" style="background-color: pink"
-                    >Cloud Firestore</span
-                  >
-                  <span class="badge badge-pill" style="background-color: pink"
-                    >Node.js</span
-                  >
-                  <span class="badge badge-pill" style="background-color: pink"
-                    >Figma</span
-                  >
-                  <span class="badge badge-pill" style="background-color: pink"
-                    >Firebase Storage</span
-                  >
-                  <span class="badge badge-pill" style="background-color: pink"
-                    >Bootstrap</span
-                  >
-                  <span class="badge badge-pill" style="background-color: pink"
-                    >CSS</span
-                  >
-                </div>
-
-                <div
-                  class="card-footer"
-                  style="text-align: center"
-                  onclick="handleClick()"
-                >
-                  Learn More
-                </div>
-              </div>
-              <!-- Card -->
+            <div class="card-body">
+              <h5 class="card-title">Roomie Radar</h5>
+              <p class="card-text">...</p>
+              <span
+                class="badge badge-pill badge-custom-size"
+                style="background-color: pink"
+                >React.js</span
+              >
+              <span class="badge badge-pill" style="background-color: pink"
+                >Cloud Firestore</span
+              >
+              <span class="badge badge-pill" style="background-color: pink"
+                >Node.js</span
+              >
+              <span class="badge badge-pill" style="background-color: pink"
+                >Figma</span
+              >
+              <span class="badge badge-pill" style="background-color: pink"
+                >Firebase Storage</span
+              >
+              <span class="badge badge-pill" style="background-color: pink"
+                >Bootstrap</span
+              >
+              <span class="badge badge-pill" style="background-color: pink"
+                >CSS</span
+              >
             </div>
-            <!--Col-->
 
-            <div class="col-lg-6 d-flex justify-content-start">
-              <div class="card" style="margin-top: 5%; width: 100%">
-                <img
-                  src="roomie_project.png"
-                  class="card-img-top img-fluid rounded-start"
-                  alt="..."
-                />
-
-                <div class="card-body">
-                  <h5 class="card-title">Online Shopping Database</h5>
-                  <p class="card-text">...</p>
-                  <span class="badge badge-pill" style="background-color: pink"
-                    >SQL</span
-                  >
-                  <span class="badge badge-pill" style="background-color: pink"
-                    >Oracle SQL Developer</span
-                  >
-                  <span class="badge badge-pill" style="background-color: pink"
-                    >Github</span
-                  >
-                </div>
-
-                <div
-                  class="card-footer"
-                  style="text-align: center"
-                  onclick="handleClick()"
-                >
-                  Learn More
-                </div>
-              </div>
-            </div>
+            <div class="card-footer" onclick="handleClick()">Learn More</div>
           </div>
-          <!--Row-->
+          <!-- Card -->
         </div>
+        <!--Col-->
+
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-xs-8 mb-3 mt-3">
+          <div class="card">
+            <img src="roomie_project.png" class="card-img-top" alt="..." />
+
+            <div class="card-body">
+              <h5 class="card-title">Online Shopping Database</h5>
+              <p class="card-text">...</p>
+              <span class="badge badge-pill" style="background-color: pink"
+                >SQL</span
+              >
+              <span class="badge badge-pill" style="background-color: pink"
+                >Oracle SQL Developer</span
+              >
+              <span class="badge badge-pill" style="background-color: pink"
+                >Github</span
+              >
+            </div>
+
+            <div class="card-footer" onclick="handleClick()">Learn More</div>
+          </div>
+        </div>
+        <!-- </div> -->
+        <!--Row-->
+        <!-- </div> -->
 
         <script>
           function handleClick() {
@@ -787,732 +742,680 @@
           }
         </script>
 
-        <div
-          class="row-container"
-          style="display: flex; justify-content: center; justify-items: center"
-        >
-          <div
-            class="row"
-            style="
-              display: flex;
-              justify-items: evenly;
-              width: 75%;
-              display: flex;
-            "
-          >
-            <!-- style = "background-color: blue; width: 75%;"> -->
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-xs-8 mb-3 mt-3">
+          <div class="card">
+            <img src="thumbnail.png" class="card-img-top" alt="..." />
 
-            <div class="col-lg-6 d-flex justify-content-center">
-              <div
-                class="card"
-                style="margin-top: 5%; margin-bottom: 5%; width: 100%"
+            <div class="card-body">
+              <h5 class="card-title">Christmas Shopping Project</h5>
+              <p class="card-text">...</p>
+              <span
+                class="badge badge-pill badge-custom-size"
+                style="background-color: pink"
+                >React.js</span
               >
-                <img
-                  src="thumbnail.png"
-                  class="card-img-top img-fluid"
-                  alt="..."
-                />
-
-                <div class="card-body">
-                  <h5 class="card-title">Christmas Shopping Project</h5>
-                  <p class="card-text">...</p>
-                  <span
-                    class="badge badge-pill badge-custom-size"
-                    style="background-color: pink"
-                    >React.js</span
-                  >
-                  <span class="badge badge-pill" style="background-color: pink"
-                    >Cloud Firestore</span
-                  >
-                  <span class="badge badge-pill" style="background-color: pink"
-                    >Node.js</span
-                  >
-                  <span class="badge badge-pill" style="background-color: pink"
-                    >Figma</span
-                  >
-                  <span class="badge badge-pill" style="background-color: pink"
-                    >Firebase Storage</span
-                  >
-                  <span class="badge badge-pill" style="background-color: pink"
-                    >Bootstrap</span
-                  >
-                  <span class="badge badge-pill" style="background-color: pink"
-                    >CSS</span
-                  >
-                </div>
-
-                <div
-                  class="card-footer"
-                  style="text-align: center"
-                  onclick="handleClick()"
-                >
-                  Learn More
-                </div>
-              </div>
-              <!-- Card -->
+              <span class="badge badge-pill" style="background-color: pink"
+                >Cloud Firestore</span
+              >
+              <span class="badge badge-pill" style="background-color: pink"
+                >Node.js</span
+              >
+              <span class="badge badge-pill" style="background-color: pink"
+                >Figma</span
+              >
+              <span class="badge badge-pill" style="background-color: pink"
+                >Firebase Storage</span
+              >
+              <span class="badge badge-pill" style="background-color: pink"
+                >Bootstrap</span
+              >
+              <span class="badge badge-pill" style="background-color: pink"
+                >CSS</span
+              >
             </div>
-            <!--Col-->
 
-            <div class="col-lg-6 d-flex justify-content-center">
-              <div
-                class="card"
-                style="margin-top: 5%; margin-bottom: 5%; width: 100%"
+            <div class="card-footer" onclick="handleClick()">Learn More</div>
+          </div>
+        </div>
+
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-xs-8 mb-3 mt-3">
+          <div class="card">
+            <img src="roomie_project.png" class="card-img-top" alt="..." />
+
+            <div class="card-body">
+              <h5 class="card-title">Online Shopping Database</h5>
+              <p class="card-text">...</p>
+              <span class="badge badge-pill" style="background-color: pink"
+                >SQL</span
               >
-                <img
-                  src="roomie_project.png"
-                  class="card-img-top img-fluid rounded-start"
-                  alt="..."
-                />
+              <span class="badge badge-pill" style="background-color: pink"
+                >Oracle SQL Developer</span
+              >
+              <span class="badge badge-pill" style="background-color: pink"
+                >Github</span
+              >
+            </div>
 
-                <div class="card-body">
-                  <h5 class="card-title">Online Shopping Database</h5>
-                  <p class="card-text">...</p>
-                  <span class="badge badge-pill" style="background-color: pink"
-                    >SQL</span
-                  >
-                  <span class="badge badge-pill" style="background-color: pink"
-                    >Oracle SQL Developer</span
-                  >
-                  <span class="badge badge-pill" style="background-color: pink"
-                    >Github</span
-                  >
-                </div>
+            <div class="card-footer" onclick="handleClick()">Learn More</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PROJECTS END -->
 
-                <div
-                  class="card-footer"
-                  style="text-align: center"
-                  onclick="handleClick()"
+    <h1
+      id="experience_section"
+      class="h1"
+      style="
+        background-image: url('lace.jpg');
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        color: #784f41;
+      "
+    >
+      Work Experience
+    </h1>
+
+    <!-- WORK EXPERIENCE START -->
+
+    <div class="work-experience">
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4 mb-3 mt-3">
+          <div class="card h-100">
+            <div id="card-front-8" class="card-side card-front">
+              <img
+                class="card-img-top"
+                src="VU_logo.png"
+                alt="Villanova University's Logo"
+              />
+              <div class="card-body">
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-briefcase" style="font-size: 20px"></i>
+                    Villanova University Department of Computer Science
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-user" style="font-size: 20px"></i>
+                    Machine Learning Teaching Assistant
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-map-marker" style="font-size: 20px"></i>
+                    Villanova, PA
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-clock-o" style="font-size: 20px"></i>
+                    August 2024 - Current
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <button
+                  type="button"
+                  id="flip-btn-8"
+                  data-card="8"
+                  class="btn flip-btn"
                 >
                   Learn More
-                </div>
+                </button>
+              </div>
+            </div>
+
+            <div id="card-back-8" class="card-side card-back">
+              <div class="card-body">
+                <h5 class="card-title">testing</h5>
+                <p>
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing
+                </p>
+              </div>
+              <div class="card-footer">
+                <button
+                  type="button"
+                  id="flip-btn-back-8"
+                  data-card="8"
+                  class="btn flip-btn-back"
+                >
+                  Back
+                </button>
               </div>
             </div>
           </div>
-          <!--Row-->
+        </div>
+
+        <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4 mb-3 mt-3">
+          <div class="card h-100">
+            <div id="card-front-7" class="card-side card-front">
+              <img
+                class="card-img-top"
+                src="VU_logo.png"
+                alt="Villanova University's Logo"
+              />
+              <div class="card-body">
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-briefcase" style="font-size: 20px"></i>
+                    Villanova University Department of Computer Science
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-user" style="font-size: 20px"></i>
+                    Data Structures and Algorithms I Teaching Assistant
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-map-marker" style="font-size: 20px"></i>
+                    Villanova, PA
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-clock-o" style="font-size: 20px"></i>
+                    August 2024 - Current
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <button
+                  type="button"
+                  id="flip-btn-7"
+                  data-card="7"
+                  class="btn flip-btn"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+
+            <div id="card-back-7" class="card-side card-back">
+              <div class="card-body">
+                <h5 class="card-title">testing</h5>
+                <p>
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing
+                </p>
+              </div>
+              <div class="card-footer">
+                <button
+                  type="button"
+                  id="flip-btn-back-7"
+                  data-card="7"
+                  class="btn flip-btn-back"
+                >
+                  Back
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4 mb-3 mt-3">
+          <div class="card h-100">
+            <div id="card-front-1" class="card-side card-front">
+              <img
+                class="card-img-top"
+                src="VU_logo.png"
+                alt="Villanova University's Logo"
+              />
+              <div class="card-body">
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-briefcase" style="font-size: 20px"></i>
+                    Villanova University Department of Mathematics
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-user" style="font-size: 20px"></i>
+                    Research Assistant
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-map-marker" style="font-size: 20px"></i>
+                    Villanova, PA
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-clock-o" style="font-size: 20px"></i> May
+                    2024 - Current
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <button
+                  type="button"
+                  id="flip-btn-1"
+                  data-card="1"
+                  class="btn flip-btn"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+
+            <div id="card-back-1" class="card-side card-back">
+              <div class="card-body">
+                <h5 class="card-title">testing</h5>
+                <p>
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing
+                </p>
+              </div>
+              <div class="card-footer">
+                <button
+                  type="button"
+                  id="flip-btn-back-1"
+                  data-card="1"
+                  class="btn flip-btn-back"
+                >
+                  Back
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4 mb-3 mt-3">
+          <div class="card h-100">
+            <!-- border-image: url('leopard.png') 30 round; -->
+            <div id="card-front-2" class="card-side card-front">
+              <img
+                class="card-img-top"
+                src="vatican_logo.png"
+                alt="The Vatican Communication Department's Logo"
+              />
+              <div class="card-body">
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-briefcase" style="font-size: 20px"></i>
+                    Vatican Communications Department
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-user" style="font-size: 20px"></i>
+                    Computer Science Intern
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-map-marker" style="font-size: 20px"></i>
+                    Apostolic Palace, Vatican City
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-clock-o" style="font-size: 20px"></i>
+                    January 2023 - May 2023
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <button
+                  type="button"
+                  id="flip-btn-2"
+                  data-card="2"
+                  class="btn flip-btn"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+
+            <div id="card-back-2" class="card-side card-back">
+              <div class="card-body">
+                <h5 class="card-title">testing</h5>
+                <p>
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing
+                </p>
+              </div>
+              <div class="card-footer">
+                <button
+                  type="button"
+                  id="flip-btn-back-2"
+                  data-card="2"
+                  class="btn flip-btn-back"
+                >
+                  Back
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4 mb-3 mt-3">
+          <div class="card h-100">
+            <div id="card-front-3" class="card-side card-front">
+              <img
+                class="card-img-top"
+                src="mount_sinai_logo.png"
+                alt="Mount Sinai Hospital's Logo"
+              />
+              <div class="card-body">
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-briefcase" style="font-size: 20px"></i>
+                    Mount Sinai Hospital
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-user" style="font-size: 20px"></i>
+                    Research Assistant (Focus on Medical AI)
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-map-marker" style="font-size: 20px"></i>
+                    New York City, NY
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-clock-o" style="font-size: 20px"></i> June
+                    2022- August 2022
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <button
+                  type="button"
+                  id="flip-btn-3"
+                  data-card="3"
+                  class="btn flip-btn"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+            <div id="card-back-3" class="card-side card-back">
+              <div class="card-body">
+                <h5 class="card-title">testing</h5>
+                <p>
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing
+                </p>
+              </div>
+              <div class="card-footer">
+                <button
+                  type="button"
+                  id="flip-btn-back-3"
+                  data-card="3"
+                  class="btn flip-btn-back"
+                >
+                  Back
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4 mb-3 mt-3">
+          <div class="card h-100">
+            <div id="card-front-4" class="card-side card-front">
+              <img
+                class="card-img-top"
+                src="VU_logo.png"
+                alt="Villanova University's Logo"
+              />
+              <div class="card-body">
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-briefcase" style="font-size: 20px"></i>
+                    Villanova University Biology Department
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-user" style="font-size: 20px"></i>
+                    Undergraduate General Biology I Teaching Assistant
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-map-marker" style="font-size: 20px"></i>
+                    Villanova, PA
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-clock-o" style="font-size: 20px"></i>
+                    August 2022 - December 2023
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <button
+                  type="button"
+                  id="flip-btn-4"
+                  data-card="4"
+                  class="btn flip-btn"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+
+            <div id="card-back-4" class="card-side card-back">
+              <div class="card-body">
+                <h5 class="card-title">testing</h5>
+                <p>
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing
+                </p>
+              </div>
+              <div class="card-footer">
+                <button
+                  type="button"
+                  id="flip-btn-back-4"
+                  data-card="4"
+                  class="btn flip-btn-back"
+                >
+                  Back
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4 mb-3 mt-3">
+          <div class="card h-100">
+            <div id="card-front-5" class="card-side card-front">
+              <img
+                class="card-img-top"
+                src="interlaken_logo.jpg"
+                alt="Interlaken Cooperative's Logo"
+              />
+              <div class="card-body">
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-briefcase" style="font-size: 20px"></i>
+                    Interlaken Cooperative
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-user" style="font-size: 20px"></i>
+                    Assistant Manager
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-map-marker" style="font-size: 20px"></i>
+                    Eastchester, NY
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-clock-o" style="font-size: 20px"></i> May
+                    2022 - August 2022
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <button
+                  type="button"
+                  id="flip-btn-5"
+                  data-card="5"
+                  class="btn flip-btn"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+
+            <div id="card-back-5" class="card-side card-back">
+              <div class="card-body">
+                <h5 class="card-title">testing</h5>
+                <p>
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing
+                </p>
+              </div>
+
+              <div class="card-footer">
+                <button
+                  type="button"
+                  id="flip-btn-back-5"
+                  data-card="5"
+                  class="btn flip-btn-back"
+                >
+                  Back
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4 mb-3 mt-3">
+          <div class="card h-100">
+            <div id="card-front-6" class="card-side card-front">
+              <img
+                class="card-img-top"
+                src="interlaken_logo.jpg"
+                alt="Interlaken Cooperative's Logo"
+              />
+              <div class="card-body">
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-briefcase" style="font-size: 20px"></i>
+                    Interlaken Cooperative
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-user" style="font-size: 20px"></i> Gate
+                    Security
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-map-marker" style="font-size: 20px"></i>
+                    Eastchester, NY
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <i class="fa fa-clock-o" style="font-size: 20px"></i> May
+                    2019 – August 2021
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <button
+                  type="button"
+                  id="flip-btn-6"
+                  data-card="6"
+                  class="btn flip-btn"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+
+            <div id="card-back-6" class="card-side card-back">
+              <div class="card-body">
+                <h5 class="card-title">testing</h5>
+                <p>
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing Testing Testing
+                  Testing Testing Testing Testing Testing
+                </p>
+              </div>
+              <div class="card-footer">
+                <button
+                  type="button"
+                  id="flip-btn-back-6"
+                  data-card="6"
+                  class="btn flip-btn-back"
+                >
+                  Back
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- Project container-->
-
-      <!-- PROJECTS END -->
     </div>
 
-    <div
-      id="container"
-      style="background-color: #c2d076; padding-bottom: 2.5%; padding-top: 2.5%"
-    >
-      <h1
-        id="experience_section"
-        class="h1"
-        style="
-          background-image: url('lace.jpg');
-          padding-top: 2.5%;
-          padding-bottom: 2.5%;
-          color: #784f41;
-        "
-      >
-        Work Experience
-      </h1>
-
-      <!-- WORK EXPERIENCE START -->
-
-      <div class="work-experience">
-        <div class="row justify-content-center">
-          <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4 mb-3 mt-3">
-            <div class="card h-100">
-              <div id="card-front-8" class="card-side card-front">
-                <img
-                  class="card-img-top"
-                  src="VU_logo.png"
-                  alt="Villanova University's Logo"
-                />
-                <div class="card-body">
-                  <ul class="list-group">
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-briefcase" style="font-size: 20px"></i>
-                      Villanova University Department of Computer Science
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-user" style="font-size: 20px"></i>
-                      Machine Learning Teaching Assistant
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-map-marker" style="font-size: 20px"></i>
-                      Villanova, PA
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-clock-o" style="font-size: 20px"></i>
-                      August 2024 - Current
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-footer">
-                  <button
-                    type="button"
-                    id="flip-btn-8"
-                    data-card="8"
-                    class="btn flip-btn"
-                  >
-                    Learn More
-                  </button>
-                </div>
-              </div>
-
-              <div id="card-back-8" class="card-side card-back">
-                <div class="card-body">
-                  <h5 class="card-title">testing</h5>
-                  <p>
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <button
-                    type="button"
-                    id="flip-btn-back-8"
-                    data-card="8"
-                    class="btn flip-btn-back"
-                  >
-                    Back
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4 mb-3 mt-3">
-            <div class="card h-100">
-              <div id="card-front-7" class="card-side card-front">
-                <img
-                  class="card-img-top"
-                  src="VU_logo.png"
-                  alt="Villanova University's Logo"
-                />
-                <div class="card-body">
-                  <ul class="list-group">
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-briefcase" style="font-size: 20px"></i>
-                      Villanova University Department of Computer Science
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-user" style="font-size: 20px"></i>
-                      Data Structures and Algorithms I Teaching Assistant
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-map-marker" style="font-size: 20px"></i>
-                      Villanova, PA
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-clock-o" style="font-size: 20px"></i>
-                      August 2024 - Current
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-footer">
-                  <button
-                    type="button"
-                    id="flip-btn-7"
-                    data-card="7"
-                    class="btn flip-btn"
-                  >
-                    Learn More
-                  </button>
-                </div>
-              </div>
-
-              <div id="card-back-7" class="card-side card-back">
-                <div class="card-body">
-                  <h5 class="card-title">testing</h5>
-                  <p>
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <button
-                    type="button"
-                    id="flip-btn-back-7"
-                    data-card="7"
-                    class="btn flip-btn-back"
-                  >
-                    Back
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4 mb-3 mt-3">
-            <div class="card h-100">
-              <div id="card-front-1" class="card-side card-front">
-                <img
-                  class="card-img-top"
-                  src="VU_logo.png"
-                  alt="Villanova University's Logo"
-                />
-                <div class="card-body">
-                  <ul class="list-group">
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-briefcase" style="font-size: 20px"></i>
-                      Villanova University Department of Mathematics
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-user" style="font-size: 20px"></i>
-                      Research Assistant
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-map-marker" style="font-size: 20px"></i>
-                      Villanova, PA
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-clock-o" style="font-size: 20px"></i> May
-                      2024 - Current
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-footer">
-                  <button
-                    type="button"
-                    id="flip-btn-1"
-                    data-card="1"
-                    class="btn flip-btn"
-                  >
-                    Learn More
-                  </button>
-                </div>
-              </div>
-
-              <div id="card-back-1" class="card-side card-back">
-                <div class="card-body">
-                  <h5 class="card-title">testing</h5>
-                  <p>
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <button
-                    type="button"
-                    id="flip-btn-back-1"
-                    data-card="1"
-                    class="btn flip-btn-back"
-                  >
-                    Back
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4 mb-3 mt-3">
-            <div class="card h-100">
-              <!-- border-image: url('leopard.png') 30 round; -->
-              <div id="card-front-2" class="card-side card-front">
-                <img
-                  class="card-img-top"
-                  src="vatican_logo.png"
-                  alt="The Vatican Communication Department's Logo"
-                />
-                <div class="card-body">
-                  <ul class="list-group">
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-briefcase" style="font-size: 20px"></i>
-                      Vatican Communications Department
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-user" style="font-size: 20px"></i>
-                      Computer Science Intern
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-map-marker" style="font-size: 20px"></i>
-                      Apostolic Palace, Vatican City
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-clock-o" style="font-size: 20px"></i>
-                      January 2023 - May 2023
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-footer">
-                  <button
-                    type="button"
-                    id="flip-btn-2"
-                    data-card="2"
-                    class="btn flip-btn"
-                  >
-                    Learn More
-                  </button>
-                </div>
-              </div>
-
-              <div id="card-back-2" class="card-side card-back">
-                <div class="card-body">
-                  <h5 class="card-title">testing</h5>
-                  <p>
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <button
-                    type="button"
-                    id="flip-btn-back-2"
-                    data-card="2"
-                    class="btn flip-btn-back"
-                  >
-                    Back
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4 mb-3 mt-3">
-            <div class="card h-100">
-              <div id="card-front-3" class="card-side card-front">
-                <img
-                  class="card-img-top"
-                  src="mount_sinai_logo.png"
-                  alt="Mount Sinai Hospital's Logo"
-                />
-                <div class="card-body">
-                  <ul class="list-group">
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-briefcase" style="font-size: 20px"></i>
-                      Mount Sinai Hospital
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-user" style="font-size: 20px"></i>
-                      Research Assistant (Focus on Medical AI)
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-map-marker" style="font-size: 20px"></i>
-                      New York City, NY
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-clock-o" style="font-size: 20px"></i> June
-                      2022- August 2022
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-footer">
-                  <button
-                    type="button"
-                    id="flip-btn-3"
-                    data-card="3"
-                    class="btn flip-btn"
-                  >
-                    Learn More
-                  </button>
-                </div>
-              </div>
-              <div id="card-back-3" class="card-side card-back">
-                <div class="card-body">
-                  <h5 class="card-title">testing</h5>
-                  <p>
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <button
-                    type="button"
-                    id="flip-btn-back-3"
-                    data-card="3"
-                    class="btn flip-btn-back"
-                  >
-                    Back
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4 mb-3 mt-3">
-            <div class="card h-100">
-              <div id="card-front-4" class="card-side card-front">
-                <img
-                  class="card-img-top"
-                  src="VU_logo.png"
-                  alt="Villanova University's Logo"
-                />
-                <div class="card-body">
-                  <ul class="list-group">
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-briefcase" style="font-size: 20px"></i>
-                      Villanova University Biology Department
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-user" style="font-size: 20px"></i>
-                      Undergraduate General Biology I Teaching Assistant
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-map-marker" style="font-size: 20px"></i>
-                      Villanova, PA
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-clock-o" style="font-size: 20px"></i>
-                      August 2022 - December 2023
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-footer">
-                  <button
-                    type="button"
-                    id="flip-btn-4"
-                    data-card="4"
-                    class="btn flip-btn"
-                  >
-                    Learn More
-                  </button>
-                </div>
-              </div>
-
-              <div id="card-back-4" class="card-side card-back">
-                <div class="card-body">
-                  <h5 class="card-title">testing</h5>
-                  <p>
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <button
-                    type="button"
-                    id="flip-btn-back-4"
-                    data-card="4"
-                    class="btn flip-btn-back"
-                  >
-                    Back
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4 mb-3 mt-3">
-            <div class="card h-100">
-              <div id="card-front-5" class="card-side card-front">
-                <img
-                  class="card-img-top"
-                  src="interlaken_logo.jpg"
-                  alt="Interlaken Cooperative's Logo"
-                />
-                <div class="card-body">
-                  <ul class="list-group">
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-briefcase" style="font-size: 20px"></i>
-                      Interlaken Cooperative
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-user" style="font-size: 20px"></i>
-                      Assistant Manager
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-map-marker" style="font-size: 20px"></i>
-                      Eastchester, NY
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-clock-o" style="font-size: 20px"></i> May
-                      2022 - August 2022
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-footer">
-                  <button
-                    type="button"
-                    id="flip-btn-5"
-                    data-card="5"
-                    class="btn flip-btn"
-                  >
-                    Learn More
-                  </button>
-                </div>
-              </div>
-
-              <div id="card-back-5" class="card-side card-back">
-                <div class="card-body">
-                  <h5 class="card-title">testing</h5>
-                  <p>
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing
-                  </p>
-                </div>
-
-                <div class="card-footer">
-                  <button
-                    type="button"
-                    id="flip-btn-back-5"
-                    data-card="5"
-                    class="btn flip-btn-back"
-                  >
-                    Back
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4 mb-3 mt-3">
-            <div class="card h-100">
-              <div id="card-front-6" class="card-side card-front">
-                <img
-                  class="card-img-top"
-                  src="interlaken_logo.jpg"
-                  alt="Interlaken Cooperative's Logo"
-                />
-                <div class="card-body">
-                  <ul class="list-group">
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-briefcase" style="font-size: 20px"></i>
-                      Interlaken Cooperative
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-user" style="font-size: 20px"></i> Gate
-                      Security
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-map-marker" style="font-size: 20px"></i>
-                      Eastchester, NY
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <i class="fa fa-clock-o" style="font-size: 20px"></i> May
-                      2019 – August 2021
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-footer">
-                  <button
-                    type="button"
-                    id="flip-btn-6"
-                    data-card="6"
-                    class="btn flip-btn"
-                  >
-                    Learn More
-                  </button>
-                </div>
-              </div>
-
-              <div id="card-back-6" class="card-side card-back">
-                <div class="card-body">
-                  <h5 class="card-title">testing</h5>
-                  <p>
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing Testing Testing
-                    Testing Testing Testing Testing Testing
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <button
-                    type="button"
-                    id="flip-btn-back-6"
-                    data-card="6"
-                    class="btn flip-btn-back"
-                  >
-                    Back
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- <div class="work-experience">
+    <!-- <div class="work-experience">
         <div class="row">
           <div class="col-md-4">
             <div id="card" class="card h-100">
@@ -1882,135 +1785,134 @@
         </div>
       </div> -->
 
+    <div
+      class="seperator"
+      style="
+        background-image: url('leopard.png');
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 5%;
+      "
+    ></div>
+
+    <div id="achievement-container">
+      <h1 id="achievement_section" class="h1">Achievements</h1>
+
+      <!-- ACHIEVEMENTS START -->
       <div
-        class="seperator"
+        class="container mt-4 achievement-container-card"
         style="
-          background-image: url('leopard.png');
-          margin-top: 0;
-          margin-bottom: 0;
-          padding-top: 5%;
+          border: 5px solid darkgrey;
+          border-radius: 30px;
+          background-color: grey;
         "
-      ></div>
-
-      <div id="achievement-container">
-        <h1 id="achievement_section" class="h1">Achievements</h1>
-
-        <!-- ACHIEVEMENTS START -->
-        <div
-          class="container mt-4 achievement-container-card"
-          style="
-            border: 5px solid darkgrey;
-            border-radius: 30px;
-            background-color: grey;
-          "
-        >
-          <div class="row">
-            <div class="col-md-2 left-side" style="padding: 0">
-              <img
-                class="rounded-circle shadow-4-strong"
-                alt="..."
-                src="vatican_logo.png"
-                style="
-                  background-color: white;
-                  width: 100%;
-                  height: auto;
-                  object-fit: cover;
-                "
-              />
-            </div>
-            <div class="col-md-10 right-side">
-              <h4>Main Content</h4>
-              <h6><i>Issued: September 2023</i></h6>
-              <p>
-                Here is the main content area. You can put more text, images, or
-                other elements here. This portion will take up the remaining
-                space of the row.
-              </p>
-              <a
-                class="icon-link icon-link-hover"
-                style="--bs-link-hover-color-rgb: 25, 135, 84"
-                href="#"
-              >
-                View Certificate
-                <svg class="bi" aria-hidden="true">
-                  <use
-                    xlink:href="#arrow-right"
-                    style="background-color: pink"
-                  ></use>
-                </svg>
-              </a>
-            </div>
+      >
+        <div class="row">
+          <div class="col-md-2 left-side" style="padding: 0">
+            <img
+              class="rounded-circle shadow-4-strong"
+              alt="..."
+              src="vatican_logo.png"
+              style="
+                background-color: white;
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+              "
+            />
+          </div>
+          <div class="col-md-10 right-side">
+            <h4>Main Content</h4>
+            <h6><i>Issued: September 2023</i></h6>
+            <p>
+              Here is the main content area. You can put more text, images, or
+              other elements here. This portion will take up the remaining space
+              of the row.
+            </p>
+            <a
+              class="icon-link icon-link-hover"
+              style="--bs-link-hover-color-rgb: 25, 135, 84"
+              href="#"
+            >
+              View Certificate
+              <svg class="bi" aria-hidden="true">
+                <use
+                  xlink:href="#arrow-right"
+                  style="background-color: pink"
+                ></use>
+              </svg>
+            </a>
           </div>
         </div>
-
-        <div
-          class="container mt-4 achievement-container-card"
-          style="
-            border: 5px solid darkgrey;
-            border-radius: 30px;
-            background-color: grey;
-          "
-        >
-          <div class="row">
-            <div class="col-md-2 left-side" style="padding: 0">
-              <img
-                class="rounded-circle shadow-4-strong"
-                alt="..."
-                src="ghc.png"
-                style="
-                  background-color: white;
-                  width: 100%;
-                  height: auto;
-                  object-fit: cover;
-                "
-              />
-            </div>
-            <div class="col-md-10 right-side">
-              <h4>Main Content</h4>
-              <p>
-                Here is the main content area. You can put more text, images, or
-                other elements here. This portion will take up the remaining
-                space of the row.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="container mt-4 achievement-container-card"
-          style="
-            border: 5px solid darkgrey;
-            border-radius: 30px;
-            background-color: grey;
-          "
-        >
-          <div class="row">
-            <div class="col-md-2 left-side" style="padding: 0">
-              <img
-                class="rounded-circle shadow-4-strong"
-                alt="..."
-                src="vatican_logo.png"
-                style="
-                  background-color: white;
-                  width: 100%;
-                  height: auto;
-                  object-fit: cover;
-                "
-              />
-            </div>
-            <div class="col-md-10 right-side">
-              <h4>Main Content</h4>
-              <p>
-                Here is the main content area. You can put more text, images, or
-                other elements here. This portion will take up the remaining
-                space of the row.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- ACHIEVEMENTS END -->
       </div>
+
+      <div
+        class="container mt-4 achievement-container-card"
+        style="
+          border: 5px solid darkgrey;
+          border-radius: 30px;
+          background-color: grey;
+        "
+      >
+        <div class="row">
+          <div class="col-md-2 left-side" style="padding: 0">
+            <img
+              class="rounded-circle shadow-4-strong"
+              alt="..."
+              src="ghc.png"
+              style="
+                background-color: white;
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+              "
+            />
+          </div>
+          <div class="col-md-10 right-side">
+            <h4>Main Content</h4>
+            <p>
+              Here is the main content area. You can put more text, images, or
+              other elements here. This portion will take up the remaining space
+              of the row.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container mt-4 achievement-container-card"
+        style="
+          border: 5px solid darkgrey;
+          border-radius: 30px;
+          background-color: grey;
+        "
+      >
+        <div class="row">
+          <div class="col-md-2 left-side" style="padding: 0">
+            <img
+              class="rounded-circle shadow-4-strong"
+              alt="..."
+              src="vatican_logo.png"
+              style="
+                background-color: white;
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+              "
+            />
+          </div>
+          <div class="col-md-10 right-side">
+            <h4>Main Content</h4>
+            <p>
+              Here is the main content area. You can put more text, images, or
+              other elements here. This portion will take up the remaining space
+              of the row.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACHIEVEMENTS END -->
     </div>
 
     <div id="container">
