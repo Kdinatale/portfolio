@@ -22,6 +22,13 @@
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <script
       src="https://kit.fontawesome.com/80b31ca5d3.js"
       crossorigin="anonymous"
@@ -51,6 +58,7 @@
         margin-right: auto;
         margin-left: auto;
         background-color: white;
+        margin-bottom: 3%;
       }
 
       .seperator {
@@ -90,7 +98,7 @@
       }
 
       .h1 {
-        color: #780000;
+        color: #black;
         /* font-family: "Shrikhand";
         font-size: 5vw; */
         text-align: center;
@@ -117,17 +125,6 @@
         border: 5px solid #ffc958;
       }
 
-      label {
-        color: pink;
-        /* font-family: "Shrikhand";
-        font-size: 2vw; */
-        font-family: "Playfair Display", serif;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-style: normal;
-        font-size: 1.65em;
-      }
-
       /* Project CSS */
 
       /* .project-container .card:hover {
@@ -143,10 +140,17 @@
           #90caf9 20px,
           #90caf9 40px
         ); */
-        background-color: #f6eacb;
+        /* background-color: #f6eacb; */
+        background-color: #784f41;
         padding-bottom: 5%;
         padding-top: 5%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.658);
+        font-family: "Playwright", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.2em;
+        margin-bottom: 3%;
+        margin-top: 3%;
       }
       .project-container .h1 {
         margin-bottom: 3%;
@@ -193,9 +197,15 @@
           #90caf9 40px
         );         */
         /* background-color: #5e3c31; */
-        background-color: #f1d3ce;
+        background-color: #784f41;
+        /* 90caf9; */
         padding-bottom: 3%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.658);
+        font-family: "Playwright", serif;
+        font-weight: 700;
+        font-style: normal;
+        margin-bottom: 3%;
+        margin-top: 3%;
       }
 
       .work-experience .h1 {
@@ -304,6 +314,17 @@
         width: 100%;
       }
 
+      .work-experience .list-group-item {
+        background-color: #d1e9f6;
+        border: 2px solid #90caf9;
+      }
+
+      .work-experience .list-group {
+        border: 2px solid #90caf9;
+        background-color: #90caf9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.527);
+      }
+
       .contact-section {
         /* background: repeating-linear-gradient(
           to right,
@@ -312,14 +333,23 @@
           pink 60px,
           pink 120px
         ); */
-        background-color: #eecad5;
+        background-color: #90caf9;
         padding-bottom: 5%;
         padding-top: 5%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.658);
+        margin-bottom: 3%;
+        margin-top: 3%;
       }
 
-      .contact-section .h1 {
-        margin-bottom: 4%;
+      label {
+        color: black;
+        /* font-family: "Shrikhand";
+        font-size: 2vw; */
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 1.65em;
       }
 
       .full-contact-area {
@@ -363,6 +393,7 @@
         text-align: center;
         /* margin-bottom: 5%; */
         /* margin-top: 2.5%; */
+
         border: 30px solid;
         border-image: url("lace.jpg") 40 round;
         border-radius: 15px;
@@ -375,11 +406,12 @@
         padding: 1em;
         /* border-radius: 3em; */
         /* background-color: #784f41; */
-        background-color: #90caf9;
+        background-color: #d1e9f6;
         padding: 20px;
         /* border: 5px solid pink; */
         /* width: 80%; */
         width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.658);
       }
 
       textarea {
@@ -390,7 +422,7 @@
       }
 
       form .btn {
-        background-color: pink;
+        background-color: #90caf9;
       }
 
       form .btn:hover {
@@ -1595,7 +1627,7 @@
       <!-- <div class="seperator"></div> -->
 
       <div class="contact-section">
-        <h1 id="contact_section" class="h1">Contact Me</h1>
+        <h1 id="contact_section" class="h1"></h1>
 
         <div class="full-contact-area">
           <div class="contact-left">
@@ -1669,7 +1701,7 @@
 
     <footer
       class="bg-body-tertiary text-center"
-      style="background-image: url('leopard.png')"
+      style="background-image: url('lace.jpg')"
     >
       <div class="container p-4 pb-0">
         <!-- Section: Social media -->
