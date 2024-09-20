@@ -696,7 +696,7 @@
 
     <br />
 
-    <div class="section-container">
+    <div class="section-container" id="about_section">
       <div class="about-container">
         <div class="about-holder-2">
           <div class="full-about">
@@ -1769,6 +1769,16 @@
       document.querySelectorAll(".flip-btn, .flip-btn-back").forEach((btn) => {
         console.log(btn);
         btn.addEventListener("click", handleFlip);
+      });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".nav-link").on("click", function () {
+          $(".nav-link").removeClass("active");
+          $(this).addClass("active");
+        });
       });
     </script>
   </body>
